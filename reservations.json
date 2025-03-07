@@ -1,0 +1,113 @@
+{
+  "10:00": {
+    "reservations": [
+      { "name": "Adam Novák" },
+      { "name": "Eva Dvořáková" },
+      { "name": "Filip Mareš" },
+      { "name": "Nikola Suchá" }
+    ],
+    "capacity": 4
+  },
+  "10:30": {
+    "reservations": [
+      { "name": "Petr Svoboda" },
+      { "name": "Denisa Křížová" },
+      { "name": "Robert Blažek" },
+      { "name": "Miroslav Hejda" }
+    ],
+    "capacity": 5
+  },
+  "11:00": {
+    "reservations": [
+      { "name": "Lucie Králová" },
+      { "name": "Martin Hruška" },
+      { "name": "Jana Malá" },
+      { "name": "Pavel Němec" },
+      { "name": "Alena Veselá" },
+      { "name": "David Horák" }
+    ],
+    "capacity": 6
+  },
+  "11:30": {
+    "reservations": [
+      { "name": "Jan Veselský" },
+      { "name": "Simona Vítová" },
+      { "name": "Radek Procházka" },
+      { "name": "Lukáš Doležal" },
+      { "name": "Kateřina Novotná" },
+      { "name": "Ondřej Fiala" }
+    ],
+    "capacity": 6
+  },
+  "12:00": {
+    "reservations": [
+      { "name": "Tereza Kučerová" },
+      { "name": "Daniel Horák" },
+      { "name": "Pavel Růžička" },
+      { "name": "Klára Veselá" },
+      { "name": "Roman Havel" },
+      { "name": "Vladimír Beneš" }
+    ],
+    "capacity": 6
+  },
+  "12:30": {
+    "reservations": [
+      { "name": "Andrea Pokorná" },
+      { "name": "Jan Kopecký" },
+      { "name": "Hana Urbanová" }
+    ],
+    "capacity": 6
+  },
+  "13:00": {
+    "reservations": [
+      { "name": "Marek Soukup" },
+      { "name": "Jitka Marešová" },
+      { "name": "Patrik Holý" },
+      { "name": "Dominik Suchý" }
+    ],
+    "capacity": 4
+  },
+  "13:30": {
+    "reservations": [
+      { "name": "Ivana Novotná" },
+      { "name": "Tomáš Zeman" },
+      { "name": "Eliška Dvořáková" },
+      { "name": "Zdeněk Bartoš" },
+      { "name": "Lenka Horová" }
+    ],
+    "capacity": 5
+  },
+  "14:00": {
+    "reservations": [
+      { "name": "Michaela Bartošová" },
+      { "name": "Václav Černý" },
+      { "name": "Jakub Šťastný" },
+      { "name": "Kristýna Vondráčková" },
+      { "name": "Ladislav Kříž" },
+      { "name": "Veronika Hrdá" }
+    ],
+    "capacity": 6
+  },
+  "14:30": {
+    "reservations": [
+      { "name": "David Navrátil" },
+      { "name": "Barbora Vítová" },
+      { "name": "Josef Marek" },
+      { "name": "Nina Holcová" },
+      { "name": "Kamil Král" },
+      { "name": "Andrea Štěpánková" }
+    ],
+    "capacity": 6
+  },
+  "15:00": {
+    "reservations": [
+      { "name": "Tomáš Blažek" },
+      { "name": "Jana Holá" },
+      { "name": "Marek Dvořák" },
+      { "name": "Nikola Krejčí" },
+      { "name": "František Šimek" },
+      { "name": "Olga Slavíková" }
+    ],
+    "capacity": 6
+  }
+}
