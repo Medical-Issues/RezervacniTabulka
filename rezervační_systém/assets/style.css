@@ -1,0 +1,358 @@
+/* Základní nastavení */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+}
+
+/* Titulky a texty */
+h1, h2 {
+    font-size: 24px;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Administrativní stránka */
+.rs-admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.rs-admin-container h1 {
+    color: #0066cc;
+    font-size: 32px;
+}
+.time-row {
+    width: 40px;
+}
+.rs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.rs-table th, .rs-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.rs-table th {
+    background-color: #0066cc;
+    color: #fff;
+    font-weight: bold;
+}
+
+.rs-table td {
+    background-color: #fafafa;
+}
+
+.rs-table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+.rs-table tr:hover td {
+    background-color: #e1f5fe;
+}
+
+/* Rezervační formulář pro uživatele */
+.rs-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    align-items: center;
+}
+
+.rs-input, .rs-select, .rs-button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    transition: 0.3s;
+}
+
+.rs-input:focus, .rs-select:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.rs-button {
+    background-color: #0066cc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.rs-button:hover {
+    background-color: #004c99;
+}
+
+/* Úspěšné zprávy */
+.rs-message-success {
+    color: #28a745;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Admin sekce - mazání rezervací */
+.btn-delete {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 14px;
+    padding: 3px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0;
+}
+
+.btn-delete:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+.big-btn-delete {
+    width: 100%;
+    font-weight: 600;
+    max-height: 50%;
+}
+
+.rs-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.rs-title {
+    text-align: center;
+    color: #0066cc;
+    font-size: 28px;
+}
+
+.rs-table {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.rs-names-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+    font-size: 20px;
+    max-height: 100px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.rs-names-list-admin {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+    font-size: 18px;
+    gap: 5px;
+}
+
+.rs-name {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.rs-no-reservations {
+    margin: 0;
+    color: #777;
+    font-size: 20px;
+}
+
+.rs-error {
+    text-align: center;
+    color: #ff4d4d;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.rs-input {
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.rs-select {
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.rs-capacity-button {
+    width: 33%;
+    padding: 12px;
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+.rs-reserve-button {
+    width: 95%;
+    padding: 12px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.rs-capacity-input {
+    width: 67%;
+    border-radius: 6px;
+    height: 100%
+}
+.rs-button:hover {
+    background-color: #004c99;
+}
+.rs-action-capacity {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    max-height: 50%;
+    font-size: 16px;
+    margin: 0;
+}
+.rs-action-delete-all {
+    display: flex;
+    max-height: 50%;
+    min-height: 35px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.rs-user-info-row {
+    width: 100px;
+}
+
+.rs-label {
+    display: block;
+    width: 95%;
+}
+.rs-excel-label {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.rs-label input,
+.rs-label select {
+    display: block;
+    width: 100%;
+}
+.buttons-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.rs-date {
+    width: 60%;
+}
+.rs-date-div {
+    display: flex;
+    flex-direction: row;
+    width: 28%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .rs-form {
+        width: 90%;
+    }
+    .rs-table, th, td {
+        font-size: 14px;
+    }
+    .rs-button, .rs-input, .rs-select {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .rs-name {
+        font-size: 10px;
+    }
+    .rs-names-list {
+        flex-wrap: nowrap;
+    }
+    .btn-delete {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1192px) {
+    .rs-action-capacity {
+        font-size: 12px;
+    }
+    .rs-delete {
+        width: 50%;
+    }
+    .rs-capacity-button {
+        width: 50%;
+    }
+}
