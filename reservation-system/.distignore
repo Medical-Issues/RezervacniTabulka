@@ -1,0 +1,14 @@
+/dist
+/node_modules
+/src
+/scripts
+/.git
+/.serena
+package.json
+package-lock.json
+.distignore
+pnpm-lock.yaml
+CLAUDE.md
+/docs
+/lib/composer.json
+/lib/composer.lock
