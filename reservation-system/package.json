@@ -1,0 +1,33 @@
+{
+  "name": "reservation-system",
+  "version": "1.2.1",
+  "description": "Zápisový Rezervační systém",
+  "main": "reservation-system.php",
+  "scripts": {
+    "build": "npm run build:css && npm run build:css:min && npm run build:js",
+    "build:css": "sass src/assets/scss/style.scss assets/style.css --load-path=node_modules",
+    "build:css:min": "sass src/assets/scss/style.scss assets/style.min.css --style=compressed --no-source-map --load-path=node_modules",
+    "build:js": "node scripts/build-js.js",
+    "watch": "npm run --parallel '/^watch:.*/'",
+    "watch:css": "sass --watch src/assets/scss:assets --load-path=node_modules",
+    "watch:js": "chokidar \"src/assets/js/**/*.js\" -c \"npm run build:js\"",
+    "clean": "rimraf assets/style.min.css assets/js/*.min.js dist/",
+    "build:zip": "node scripts/build-zip.js",
+    "dist": "npm run build && npm run build:zip",
+    "version": "node scripts/update-version.js",
+    "version:patch": "npm version patch --no-git-tag-version && node scripts/update-version.js",
+    "version:minor": "npm version minor --no-git-tag-version && node scripts/update-version.js",
+    "version:major": "npm version major --no-git-tag-version && node scripts/update-version.js"
+  },
+  "devDependencies": {
+    "archiver": "^6.0.0",
+    "chalk": "^4.1.2",
+    "chokidar-cli": "^3.0.0",
+    "glob": "^10.0.0",
+    "rimraf": "^5.0.0",
+    "sass": "^1.69.0",
+    "terser": "^5.24.0"
+  },
+  "author": "MS Skola Hrou",
+  "license": "GPL-2.0+"
+}
